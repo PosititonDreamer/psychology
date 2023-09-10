@@ -1,0 +1,14 @@
+mixin social(socialClass = null)
+  ul.social(class=socialClass)
+    li.social__item
+      a(href='#').social__link
+        include ~@svg/mixins/Ui-mixins/social/viber.svg
+    li.social__item
+      a(href='#').social__link
+        include ~@svg/mixins/Ui-mixins/social/telegram.svg
+    li.social__item
+      a(href='#').social__link
+        include ~@svg/mixins/Ui-mixins/social/whatsapp.svg
+    li.social__item
+      a(href='#').social__link
+        include ~@svg/mixins/Ui-mixins/social/phone.svg
