@@ -1,0 +1,10 @@
+mixin popup(title, name, classPopup = null)
+  .popup(data-popup=name, class=classPopup)
+    .popup__inner
+      .popup__head
+        p.popup__title=title
+        button.popup__close
+          span
+          span
+      .popup__content
+        block

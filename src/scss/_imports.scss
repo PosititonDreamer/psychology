@@ -1,5 +1,8 @@
 // Ui-Components
 @import "./components/Ui-components/title";
-@import "./mixins/Ui-mixins/button";
 @import "./components/Ui-components/link";
+
+// Ui-Mixins
+@import "./mixins/Ui-mixins/button";
+@import "./mixins/Ui-mixins/popup";
 
