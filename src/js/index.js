@@ -7,7 +7,7 @@ import './_imports';
 
 document.addEventListener('DOMContentLoaded', () => {
   const resize = () => {
-    document.documentElement.style.setProperty('-window-height', `${window.innerHeight}px`)
+    document.documentElement.style.setProperty('--window-height', `${window.innerHeight}px`)
   }
   resize()
 
