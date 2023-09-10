@@ -12,7 +12,7 @@ body {
   min-width: 320px;
   box-sizing: border-box;
   overflow: hidden auto;
-  min-height: var(--vh);
+  min-height: var(--window-height, 100vh);
   display: grid;
   grid-template-rows: auto 1fr auto;
   font-family: Roboto, sans-serif;
