@@ -16,7 +16,6 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   font-family: Roboto, sans-serif;
-  color: var(--primary);
   background-image: url("../images/background.png");
   background-size: cover;
   background-position: top center;
@@ -27,6 +26,8 @@ body {
   padding: 0;
   margin: 0;
 }
+
+
 header, main, footer {
   width: 100%;
 }
@@ -34,7 +35,7 @@ header, main, footer {
 
 .container {
   margin: 0 auto;
-  width: 100%;
+  max-width: min(calc(100vw - 40px), 1440px);
 }
 
 @import './_imports';
