@@ -1,13 +1,33 @@
 .title {
-  &--h1 {
-    @include fontAdaptive(40px, 46px, 700);
-  }
-
   &--h2 {
-    @include fontAdaptive(34px, 40px, 700);
+    @include font(Inter, 34px, 40px, 700);
   }
 
   &--h3 {
-    @include fontAdaptive(27px, 34px, 700);
+    @include font(Inter, 27px, 34px, 700);
+  }
+}
+
+@include tablet {
+  .title {
+    &--h2 {
+      @include font(Inter, 30px, 36px, 700);
+    }
+
+    &--h3 {
+      @include font(Inter, 27px, 34px, 700);
+    }
+  }
+}
+
+@include phone {
+  .title {
+    &--h2 {
+      @include font(Inter, 20px, 30px, 700);
+    }
+
+    &--h3 {
+      @include font(Inter, 27px, 34px, 700);
+    }
   }
 }
