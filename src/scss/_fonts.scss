@@ -17,5 +17,6 @@
 
 // Inter font
 @include font-face(Inter, '../fonts/Inter/Inter-Light', 300, normal, ttf);
+@include font-face(Inter, '../fonts/Inter/Inter-Medium', 500, normal, ttf);
 @include font-face(Inter, '../fonts/Inter/Inter-SemiBold', 600, normal, ttf);
 
