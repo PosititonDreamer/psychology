@@ -13,8 +13,8 @@ body {
   box-sizing: border-box;
   overflow: hidden auto;
   min-height: var(--window-height, 100vh);
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  display: flex;
+  flex-direction: column;
   font-family: Roboto, sans-serif;
   background-image: url("../images/background.png");
   background-size: cover;
