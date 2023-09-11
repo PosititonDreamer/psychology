@@ -1,0 +1,39 @@
+.button {
+  background: var(--orange);
+  display: flex;
+  border: 2px solid var(--orange);
+  color: var(--green);
+  text-transform: uppercase;
+  transition: border-color .3s ease-in-out;
+  position: relative;
+  @include fontAdaptive(20px, 26px, 600);
+
+  &__hover-text, &__preview {
+    padding: 10px 20px;
+    display: block;
+  }
+
+  &__hover-text {
+    width: max-content;
+  }
+
+  &__hover {
+    position: absolute;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--green);
+    color: var(--yellow);
+    width: 0%;
+    overflow: hidden;
+    transition: width .3s ease-in-out;
+  }
+
+  &:hover {
+    border-color: var(--green);
+
+    .button__hover {
+      width: 100%;
+    }
+  }
+}

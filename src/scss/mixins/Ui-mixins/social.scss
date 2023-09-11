@@ -1,0 +1,23 @@
+.social {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__link {
+    color: var(--primary);
+    transition: color .3s ease-in-out;
+
+    &:hover {
+      color: var(--primary-50)
+    }
+  }
+}

@@ -1,0 +1,21 @@
+// ui
+include ~@mixins/Ui-mixins/button
+include ~@mixins/Ui-mixins/popup
+include ~@mixins/Ui-mixins/social
+
+block vars
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    title #{title}
+  body
+    include ~@components/menu.pug
+    include ~@components/header.pug
+
+    main
+      block content
+      include ~@components/banner.pug
+    include ~@components/footer.pug

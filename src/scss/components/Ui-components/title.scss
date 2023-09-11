@@ -1,0 +1,13 @@
+.title {
+  &--h1 {
+    @include fontAdaptive(40px, 46px, 700);
+  }
+
+  &--h2 {
+    @include fontAdaptive(34px, 40px, 700);
+  }
+
+  &--h3 {
+    @include fontAdaptive(27px, 34px, 700);
+  }
+}
