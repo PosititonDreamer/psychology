@@ -20,7 +20,3 @@ input, textarea {
   outline: none;
   resize: none;
 }
-
-p {
-  @include fontAdaptive(18px, 36px, 400);
-}
