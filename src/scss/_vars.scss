@@ -1,10 +1,12 @@
 :root {
   --primary: #551756;
-  --primary-50: rgba(85, 23, 86, 0.50);
   --primary-25: rgba(85, 23, 86, 0.25);
+  --primary-50: rgba(85, 23, 86, 0.50);
+  --primary-75: rgba(85, 23, 86, 0.75);
   --green: #B5ECA1;
   --yellow: #FFFAD0;
   --white: white;
 
+  --z-top: 80;
   --z-over-top: 100;
 }
