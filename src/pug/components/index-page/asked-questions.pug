@@ -1,0 +1,16 @@
+section.asked-questions
+  .container.asked-questions__container
+    h2.asked-questions__title Частозадаваемые вопросы
+    .asked-questions__accordions
+      .accordion-wrapper
+        -let i = 0
+        while i < 5
+          +accordion('Как обычно проходит сеанс?')
+            block cnt
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit.&nbsp;
+                b Animi architecto, corporis cupiditate&nbsp;
+                | eligendi et excepturi fugit hic, iure mollitia nemo perspiciatis quis repellendus, similique! Ab ad blanditiis eius minus pariatur.
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto, corporis cupiditate eligendi et excepturi fugit hic, iure mollitia nemo perspiciatis quis repellendus, similique! Ab ad blanditiis eius minus pariatur.
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto, corporis cupiditate eligendi et excepturi fugit hic, iure mollitia nemo perspiciatis quis repellendus, similique! Ab ad blanditiis eius minus pariatur.
+          -i++
+
