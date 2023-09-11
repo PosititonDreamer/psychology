@@ -5,7 +5,6 @@
     color: var(--primary);
     text-align: center;
     margin-bottom: 20px;
-    @include font(Inter, 40px, 56px, 600);
   }
 
   &__accordions {
