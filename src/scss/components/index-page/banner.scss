@@ -139,7 +139,7 @@
     border: 1px solid var(--primary);
     border-radius: 5px;
     color: var(--primary);
-    transition: backround .3s ease-in-out, color .3s ease-in-out;
+    transition: background .3s ease-in-out, color .3s ease-in-out;
     @include font(Alegreya, 28px, 34px, 500);
 
     &:hover {
