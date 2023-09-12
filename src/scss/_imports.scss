@@ -1,12 +1,11 @@
 // Ui-Components
 @import "./components/Ui-components/title";
 @import "./components/Ui-components/link";
+@import "components/Ui-components/button";
 
 // Ui-Mixins
-@import "./mixins/Ui-mixins/button";
 @import "./mixins/Ui-mixins/popup";
 @import "./mixins/Ui-mixins/social";
-@import "./mixins/Ui-mixins/accordion";
 @import "./mixins/Ui-mixins/accordion";
 @import "./mixins/Ui-mixins/input";
 @import "./mixins/Ui-mixins/select";
