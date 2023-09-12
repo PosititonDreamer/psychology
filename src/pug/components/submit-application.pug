@@ -1,0 +1,12 @@
++popup('Оставить заявку', 'application', 'submit-application')
+  block SAContent
+    +input('text', 'Имя', true, null, null, 'name')
+    +input('text', 'Телефон', true, null, null, 'phone')
+    +input('date', 'Желаемая дата', null, null, null, 'date')
+    +input('text', 'Описание проблемы', null, null, null, 'description', 'textarea')
+    +select('', 'soc')
+      li.select__item.select__item--active(data-id=0) Как с вами связаться?
+      li.select__item(data-id=2) Telegram
+      li.select__item(data-id=3) Whatsapp
+      li.select__item(data-id=4) Viber
+      li.select__item(data-id=5) По телефону
