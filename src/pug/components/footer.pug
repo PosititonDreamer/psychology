@@ -1,0 +1,39 @@
+footer.footer
+  .container.footer__container
+    .footer__inner
+      .footer__info-block
+        a(href='#').footer__logo
+          include ~@svg/logo.svg
+        p.footer__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque id possimus vel. Explicabo harum molestias unde! Ea itaque sunt suscipit?
+      .footer__links
+        .footer__links-block
+          p.footer__title Полезные ссылки
+          nav.footer__nav
+            ul.footer__list
+              li.footer__item
+                a(href='#').footer__link Биография
+              li.footer__item
+                a(href='#').footer__link Блог
+              li.footer__item
+                a(href='#').footer__link Политика конфиденциальности
+        .footer__links-block
+          nav.footer__nav
+            a(href='#').footer__title-link Услуги
+            ul.footer__list
+              li.footer__item
+                a(href='#').footer__link Личностное развитие
+              li.footer__item
+                a(href='#').footer__link Женско-мужские отношения
+              li.footer__item
+                a(href='#').footer__link Экзистенциальный кризис
+              li.footer__item
+                a(href='#').footer__link Фобии и страхи
+              li.footer__item
+                a(href='#').footer__link Психологические травмы
+              li.footer__item
+                a(href='#').footer__link Детско-родительские отношения
+      .footer__contacts
+        p.footer__title Социальные сети
+        +social('footer__socials')
+  include copyright.pug
+

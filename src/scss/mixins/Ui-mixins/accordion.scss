@@ -1,0 +1,143 @@
+.accordion-wrapper {
+  box-shadow: 0 4px 8px var(--primary-50);
+
+  .accordion {
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--primary-25);
+    }
+  }
+}
+
+.accordion {
+  background: var(--yellow);
+
+  &--open {
+    .accordion {
+      &__head {
+        border-color: var(--primary-25);
+      }
+      &__button {
+        &::after {
+          transform: translate(-50%, -50%) rotate(0);
+        }
+      }
+    }
+  }
+
+  &__head, &__content {
+    padding: 20px 30px;
+  }
+
+  &__head {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: border-color .3s ease-in-out;
+
+    &:hover {
+      .accordion__name {
+        color: var(--primary)
+      }
+
+      .accordion__button {
+        opacity: 0.75;
+      }
+    }
+  }
+
+  &__name {
+    max-width: 946px;
+    color: var(--primary);
+    transition: color .3s ease-in-out;
+    font-style: italic;
+    @include font(Alegreya, 28px, 36px, 500);
+  }
+
+  &__button {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background: var(--primary-50);
+    transition: opacity .3s ease-in-out;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform-origin: center;
+      transform: translate(-50%, -50%);
+      height: 2px;
+      background: var(--primary);
+      width: 50%;
+    }
+
+    &::after {
+      transition: transform .3s ease-in-out;
+      transform: translate(-50%, -50%) rotate(-90deg);
+    }
+  }
+
+  &__inner {
+    height: 0;
+    overflow: hidden;
+  }
+
+  &__content {
+
+    p {
+      color: var(--primary-75);
+      @include font(Inter, 18px, 25px, 400);
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    b {
+      font-weight: 700;
+    }
+  }
+}
+
+@include tablet {
+  .accordion {
+
+    &__name {
+      max-width: 608px;
+      @include fontAdaptive(18px, 26px);
+    }
+
+    &__head, &__content {
+      padding: 10px 20px;
+    }
+
+    &__button {
+      width: 28px;
+      height: 28px;
+    }
+
+    &__content {
+      p {
+        @include fontAdaptive(16px, 23px);
+      }
+    }
+  }
+}
+@include phone {
+  .accordion {
+    &__name {
+      @include fontAdaptive(16px, 22px);
+    }
+
+
+    &__content {
+      p {
+        @include fontAdaptive(14px, 20px);
+      }
+    }
+  }
+}

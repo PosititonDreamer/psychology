@@ -2,6 +2,7 @@
 include ~@mixins/Ui-mixins/button
 include ~@mixins/Ui-mixins/popup
 include ~@mixins/Ui-mixins/social
+include ~@mixins/Ui-mixins/accordion
 
 block vars
 
@@ -14,8 +15,7 @@ html(lang="ru")
   body
     include ~@components/menu.pug
     include ~@components/header.pug
-
     main
       block content
-      include ~@components/banner.pug
+    include ~@components/asked-questions
     include ~@components/footer.pug

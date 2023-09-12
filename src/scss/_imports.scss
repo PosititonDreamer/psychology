@@ -6,9 +6,12 @@
 @import "./mixins/Ui-mixins/button";
 @import "./mixins/Ui-mixins/popup";
 @import "./mixins/Ui-mixins/social";
+@import "./mixins/Ui-mixins/accordion";
 
 // Components
 @import "./components/header";
 @import "./components/menu";
 @import "./components/banner";
-
+@import "./components/footer";
+@import "./components/copyright";
+@import "./components/asked-questions";

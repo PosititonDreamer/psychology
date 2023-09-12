@@ -1,0 +1,55 @@
+.copyright {
+  padding: 10px 0;
+  border-top: 1px solid var(--primary-25);
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text, &__link {
+    color: var(--primary);
+  }
+
+  &__text {
+    margin-right: 5px;
+    @include font(Inter, 20px, 30px, 300);
+  }
+
+  &__link {
+    display: block;
+    font-style: italic;
+    position: relative;
+    @include font(Alegreya, 20px, 22px, 500);
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: width .3s ease-in-out;
+    }
+
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@include phone {
+  .copyright {
+
+    &__inner {
+      justify-content: flex-start;
+    }
+    &__text, &__link {
+      @include fontAdaptive(15px, 20px);
+    }
+  }
+}

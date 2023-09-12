@@ -76,6 +76,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: var(--z-top);
     width: 100vw;
     background: var(--green);
     box-shadow: 0 2px 4px var(--green);
