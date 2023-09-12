@@ -1,0 +1,59 @@
+.submit-application {
+  &__form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__select-block {
+    height: 42px;
+    margin: 6px 0 18px;
+  }
+
+  &__button {
+    width: 100%;
+    margin-top: auto;
+  }
+
+  &__final {
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    &--view {
+      display: flex;
+      & ~ .submit-application__form {
+        display: none;
+      }
+    }
+
+    svg {
+      display: block;
+      margin: 0 auto;
+      width: 90px;
+      height: auto;
+    }
+  }
+
+  &__thank, &__final-text {
+    text-align: center;
+    color: var(--primary);
+    font-style: italic;
+    @include font(Alegreya, 24px, 30px, 500);
+  }
+
+  &__thank {
+    margin-bottom: 10px;
+  }
+
+  &__final-text {
+    margin-bottom: 20px;
+  }
+}
+
+@include phone {
+  .submit-application {
+    &__final {
+      justify-content: center;
+    }
+  }
+}

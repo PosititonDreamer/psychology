@@ -1,12 +1,19 @@
 +popup('Оставить заявку', 'application', 'submit-application')
   block SAContent
-    +input('text', 'Имя', true, null, null, 'name')
-    +input('text', 'Телефон', true, null, null, 'phone')
-    +input('date', 'Желаемая дата', null, null, null, 'date')
-    +input('text', 'Описание проблемы', null, null, null, 'description', 'textarea')
-    +select('', 'soc')
-      li.select__item.select__item--active(data-id=0) Как с вами связаться?
-      li.select__item(data-id=2) Telegram
-      li.select__item(data-id=3) Whatsapp
-      li.select__item(data-id=4) Viber
-      li.select__item(data-id=5) По телефону
+    .submit-application__final
+      p.submit-application__thank Спасибо!
+      p.submit-application__final-text Ваша заявка успешно отправлена!
+      include ~@svg/components/submit-application/accept.svg
+    form.submit-application__form
+      +input('text', 'Имя', true, null, 'submit-application__input', 'name')
+      +input('text', 'Телефон', true, null, 'submit-application__input', 'phone')
+      +input('date', 'Желаемая дата', null, null, 'submit-application__input', 'date')
+      .submit-application__select-block
+        +select('submit-application__select', 'soc')
+          li.select__item.select__item--active.select__item--empty(data-id=0) Как с вами связаться?
+          li.select__item(data-id=2) Написать в Telegram
+          li.select__item(data-id=3) Написать в Whatsapp
+          li.select__item(data-id=4) Написать в Viber
+          li.select__item(data-id=5) Позвонить по телефону
+      +input('text', 'Описание проблемы', null, null, 'submit-application__input', 'description', 'textarea')
+      button.button.button--small.submit-application__button Отправить заявку
