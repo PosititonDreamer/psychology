@@ -1,0 +1,10 @@
+mixin input(typeInput, text, required, topText = null, classInput = null, name = null, type = 'input')
+  label.input-wrapper(class=classInput)
+    if topText
+      p.input-wrapper__top-text=topText
+    if type === 'input'
+      input(type=typeInput, name=dataName, required=required).input-wrapper__input
+    if type === 'textarea'
+      textarea(rows=8, name=dataName, required=required).input-wrapper__input
+    p.input-wrapper__name(class=required && 'input-wrapper__name--required')=text
+    span.input-wrapper__error Обязательное поле

@@ -1,0 +1,103 @@
+.input-wrapper {
+  display: block;
+  position: relative;
+  padding: 18px 0 15px;
+  width: 100%;
+
+  &--not-text {
+    padding: 0 0 15px;
+
+    .input-wrapper__name {
+      top: 9px;
+      @include fontAdaptive(14px, 21px, 400);
+
+      &--required::after {
+        display: none;
+      }
+    }
+    .input-wrapper__input {
+      &--not-empty, &--error, &:focus {
+        ~ .input-wrapper__name {
+          top: 9px;
+          left: 15px;
+          opacity: 0;
+          @include fontAdaptive(14px, 21px, 400);
+        }
+      }
+    }
+  }
+
+  &__name {
+    position: absolute;
+    top: 27px;
+    left: 15px;
+    color: var(--primary);
+    opacity: 0.4;
+    transition: all .3s ease-in-out;
+    pointer-events: none;
+    @include font(Inter, 14px, 21px, 400);
+
+    &--required {
+      &::after {
+        content: '*';
+        margin-left: 1px;
+      }
+    }
+  }
+
+  &__top-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--primary);
+    opacity: 0.6;
+    @include font(Inter, 10px, 15px, 500);
+  }
+
+  &__input {
+    background: var(--yellow);
+    border: 1px solid var(--primary-25);
+    border-radius: 3px;
+    padding: 9px 15px 10px;
+    color: var(--primary);
+    transition: border-color .3s ease-in-out;
+    width: 100%;
+
+    @include font(Inter, 14px, 21px, 400);
+
+    &--not-empty, &--error, &:focus {
+      border-color: var(--primary);
+
+      ~ .input-wrapper__name {
+        top: 0;
+        left: 0;
+        opacity: 0.6;
+        @include fontAdaptive(12px, 18px, 500);
+      }
+    }
+
+    &--error {
+      border-color: var(--orange);
+
+      ~ .input-wrapper__error {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+
+  &__error {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--orange);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity .3s ease-in-out;
+    @include font(Inter, 10px, 15px, 500);
+  }
+}
