@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
           const text = item.innerText
           selectActiveSpan.innerHTML = text
           selectInput.value = text
-          console.log(selectInput.value)
           selectItems[activeIndex].classList.remove('select__item--active')
           activeIndex = index
           selectItems[index].classList.add('select__item--active')
