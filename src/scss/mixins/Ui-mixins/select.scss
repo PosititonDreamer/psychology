@@ -1,0 +1,53 @@
+.select {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background: var(--yellow);
+  border-color: var(--primary);
+
+  &__active {
+    height: 42px;
+    padding: 13px 17px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--primary);
+    @include font(InterTight, 14px, 1, 500);
+
+    svg {
+      color: var(--primary);
+      transition: rotate .3s ease-in-out;
+    }
+
+    &--view {
+      svg {
+        rotate: 180deg;
+      }
+    }
+  }
+
+  &__list {
+    height: 0;
+    overflow: hidden;
+    z-index: 6;
+  }
+
+  &__item {
+    min-height: 35px;
+    padding: 10px 15px;
+    width: 100%;
+    border-right: unset;
+    border-top: 1px solid;
+    color: var(--primary);
+    @include font(InterTight, 14px, 14px, 500);
+
+    &--active, &--empty {
+      display: none;
+    }
+  }
+}
