@@ -1,0 +1,8 @@
+mixin select(classSelect, name = null)
+    .select(class=classSelect)
+        input(type='hidden' name=name).select__input
+        p.select__active
+            span
+            include ~@svg/mixins/Ui-mixins/select/arrow-select.svg
+        ul.select__list
+            block
