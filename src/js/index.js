@@ -1,6 +1,8 @@
 // polyfills
+import 'simplebar';
 import '@babel/polyfill/dist/polyfill';
 // styles
+import 'simplebar/dist/simplebar.css';
 import '../scss/style.scss';
 // imports
 import './_imports';

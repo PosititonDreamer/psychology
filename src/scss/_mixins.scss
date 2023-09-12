@@ -20,13 +20,13 @@
   $src: null;
 
   $extmods: (
-          eot: "?",
-          svg: "#" + str-replace($name, " ", "_")
+    eot: "?",
+    svg: "#" + str-replace($name, " ", "_")
   );
 
   $formats: (
-          otf: "opentype",
-          ttf: "truetype"
+    otf: "opentype",
+    ttf: "truetype"
   );
 
   @each $ext in $exts {
@@ -65,7 +65,7 @@
 @mixin fontAdaptive($size, $lineHeight, $weight: null) {
   font-size: $size;
   line-height: $lineHeight;
-  @if($weight) {
+  @if ($weight) {
     font-weight: $weight;
   }
 }
