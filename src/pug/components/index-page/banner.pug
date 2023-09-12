@@ -1,19 +1,26 @@
-.banner
-  .container
+section.banner
+  .banner__line.banner__line--left
+  .container.banner__container
     .banner__inner
       .banner__content
         .banner__text-block
-          h1.banner__title Знакомьтесь, психолог Виталий Дмитриевич
-          .banner__content-block(data-simplebar)
-            p.banner__list-title Я помогу избавиться вам от:
-            ul.banner__list
-              li.banner__item Депрессии и тревоги
-              li.banner__item Трудности принимать решения
-              li.banner__item Проблем с карьерой
-              li.banner__item Проблем в отношениях
-              li.banner__item Зависимостей
-              li.banner__item Фобий и страхов
-            p.banner__list-title
-              | Если вы находитесь на этом сайте, значит вам нужна помощь, помогите себе, как можно скорей, ведь чем больше вы откладываете, тем сложней принять решение!
-        .banner__image
+          .banner__text-block_inner
+            h1.banner__title Знакомьтесь, психолог Виталий Дмитриевич
+            .banner__content-block(data-simplebar)
+              p.banner__list-title Я помогу избавиться вам от:
+              ul.banner__list
+                li.banner__item Депрессии и тревоги
+                li.banner__item Трудности принимать решения
+                li.banner__item Проблем с карьерой
+                li.banner__item Проблем в отношениях
+                li.banner__item Зависимостей
+                li.banner__item Фобий и страхов
+              p.banner__list-title.banner__description
+                | Если вы находитесь на этом сайте, значит вам нужна помощь, помогите себе, как можно скорей, ведь чем больше вы откладываете, тем сложней принять решение!
+          .banner__button_inner
+            button.banner__button Записаться
+        picture.banner__image
+          source(srcset="./images/components/index-page/banner/banner-image.jpg" media='(max-width: 700px)')
+          source(srcset="./images/components/index-page/banner/banner-image.jpg" media='(max-width: 1200px)')
           img(src="./images/components/index-page/banner/banner-image.jpg")
+  .banner__line.banner__line--right

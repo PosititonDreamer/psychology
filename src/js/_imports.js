@@ -1,3 +1,6 @@
 // Ui-Mixins
 import './mixins/Ui-mixins/popup'
 import './mixins/Ui-mixins/accordion'
+
+// Components
+import './components/index-page/banner'
