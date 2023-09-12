@@ -280,3 +280,10 @@
     }
   }
 }
+@media screen and (max-height: 700px) {
+  .banner {
+    &__content-block {
+      max-height: 200px;
+    }
+  }
+}
