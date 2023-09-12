@@ -41,6 +41,35 @@
     max-height: 400px;
     height: 100%;
     overflow: hidden auto;
+
+    .simplebar-track {
+      background: var(--primary-50);
+      border-radius: 16px;
+      opacity: 1;
+
+      .simplebar-scrollbar {
+        border-radius: 16px;
+
+        &::before {
+          opacity: 1 !important;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: var(--primary);
+          border-radius: 16px;
+        }
+      }
+
+      &.simplebar-vertical {
+        height: 100%;
+        width: 7px !important;
+      }
+    }
+
+    .simplebar-placeholder {
+      width: 100% !important;
+    }
   }
 
   &__text-block {
@@ -105,10 +134,18 @@
   }
 
   &__button {
-    background: orange;
+    background: transparent;
     padding: 10px 25px;
-    border: 1px solid black;
-    @include font(Alegreya, 28px, 34px, 400);
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    color: var(--primary);
+    transition: backround .3s ease-in-out, color .3s ease-in-out;
+    @include font(Alegreya, 28px, 34px, 500);
+
+    &:hover {
+      background: var(--primary);
+      color: var(--yellow);
+    }
   }
 
   &__image {
