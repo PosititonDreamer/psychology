@@ -75,6 +75,11 @@
       }
     }
 
+    &[type='date'] {
+      min-width: 95%;
+      height: 42px;
+    }
+
     &--error {
       border-color: var(--orange);
 
