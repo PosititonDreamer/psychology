@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: auto 1fr auto;
   padding: 60px 0;
+  height: calc(var(--window-height, 100vh) - 130px);
 
   &__container {
     max-width: min(calc(100vw - 40px), 1290px);
