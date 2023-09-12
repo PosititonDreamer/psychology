@@ -12,9 +12,14 @@
     @include fontAdaptive(20px, 26px);
   }
 
-  &:hover {
+  &:not(:disabled):hover {
     background: var(--primary);
     color: var(--yellow);
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.5;
   }
 }
 
