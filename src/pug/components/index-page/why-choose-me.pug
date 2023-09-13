@@ -1,2 +1,22 @@
 .why-choose-me
-
+  .container
+    .why-choose-me__inner
+      picture.why-choose-me__image
+        source(srcset="./images/components/index-page/why-choose-me/why-choose-me.jpg" media='(max-width: 700px)')
+        source(srcset="./images/components/index-page/why-choose-me/why-choose-me.jpg" media='(max-width: 1200px)')
+        img(src="./images/components/index-page/why-choose-me/why-choose-me.jpg")
+      .why-choose-me__wrapper
+        .why-choose-me__content
+          h2.why-choose-me__title Почему выбирают меня
+          .why-choose-me__text-block
+            .why-choose-me__icon
+              include ~@svg/index-page/why-choose-me/icon.svg
+            .why-choose-me__text
+              h2.why-choose-me__subtitle Я лучший в своем деле
+              p.why-choose-me__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi distinctio dolorum eius et eveniet inventore quis tempore temporibus veniam!
+          .why-choose-me__text-block
+            .why-choose-me__icon
+              include ~@svg/index-page/why-choose-me/icon.svg
+            .why-choose-me__text
+              h2.why-choose-me__subtitle Знаю что вам нужно
+              p.why-choose-me__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam eligendi enim iusto perferendis, quisquam sunt velit. Accusantium eius molestiae necessitatibus!
