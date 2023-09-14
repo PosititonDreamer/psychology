@@ -182,6 +182,10 @@
 @media (max-width: 1200px) {
   .banner {
     margin-top: 70px;
+
+    &__content-block {
+      max-height: 270px;
+    }
   }
 }
 
@@ -230,6 +234,10 @@
 @media (max-width: 800px) {
   .banner {
     display: flex;
+
+    &__content-block {
+      max-height: 220px;
+    }
 
     &__content {
       display: flex;
