@@ -40,6 +40,12 @@
   &__content {
     height: 100%;
     overflow: hidden auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   &__head {

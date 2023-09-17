@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: auto 1fr auto;
   padding: 60px 0;
+  height: calc(var(--window-height, 100vh) - 130px);
 
   &__container {
     max-width: min(calc(100vw - 40px), 1290px);
@@ -133,21 +134,6 @@
     margin-top: 10px;
   }
 
-  &__button {
-    background: transparent;
-    padding: 10px 25px;
-    border: 1px solid var(--primary);
-    border-radius: 5px;
-    color: var(--primary);
-    transition: background .3s ease-in-out, color .3s ease-in-out;
-    @include font(Alegreya, 28px, 34px, 500);
-
-    &:hover {
-      background: var(--primary);
-      color: var(--yellow);
-    }
-  }
-
   &__image {
     margin-top: 7%;
 
@@ -242,11 +228,6 @@
     &__title {
       @include fontAdaptive(18px, 20px);
     }
-
-    &__button {
-      padding: 5px 15px;
-      @include fontAdaptive(22px, 26px, 400);
-    }
   }
 }
 
@@ -302,12 +283,15 @@
       }
     }
 
-    &__button {
-      @include fontAdaptive(20px, 22px, 400);
-    }
-
     &__image {
       width: 77%;
+    }
+  }
+}
+@media screen and (max-height: 700px) {
+  .banner {
+    &__content-block {
+      max-height: 200px;
     }
   }
 }

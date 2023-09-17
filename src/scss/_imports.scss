@@ -1,12 +1,11 @@
 // Ui-Components
 @import "./components/Ui-components/title";
 @import "./components/Ui-components/link";
+@import "components/Ui-components/button";
 
 // Ui-Mixins
-@import "./mixins/Ui-mixins/button";
 @import "./mixins/Ui-mixins/popup";
 @import "./mixins/Ui-mixins/social";
-@import "./mixins/Ui-mixins/accordion";
 @import "./mixins/Ui-mixins/accordion";
 @import "./mixins/Ui-mixins/input";
 @import "./mixins/Ui-mixins/select";
@@ -17,7 +16,7 @@
 @import "./components/footer";
 @import "./components/copyright";
 @import "./components/asked-questions";
+@import "./components/submit-application";
 @import "./components/index-page/banner";
 @import "./components/index-page/why-choose-me";
-@import "./components/submit-application";
 

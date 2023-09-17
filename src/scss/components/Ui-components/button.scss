@@ -1,0 +1,41 @@
+.button {
+  background: transparent;
+  padding: 10px 25px;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  color: var(--primary);
+  transition: background .3s ease-in-out, color .3s ease-in-out;
+  @include font(Alegreya, 28px, 34px, 500);
+
+  &--small {
+    padding: 8px 25px;
+    @include fontAdaptive(20px, 26px);
+  }
+
+  &:not(:disabled):hover {
+    background: var(--primary);
+    color: var(--yellow);
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+
+@include tablet {
+  .button {
+    padding: 5px 15px;
+    @include fontAdaptive(22px, 26px, 400);
+
+    &--small {
+      @include fontAdaptive(20px, 22px);
+    }
+  }
+}
+
+@include phone {
+  .button {
+    @include fontAdaptive(20px, 22px);
+  }
+}
