@@ -2,16 +2,11 @@
   padding: 0 0 60px;
   color: var(--primary);
 
-  &__title {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
   &__wrapper {
     display: grid;
-    grid-template-columns: 542px 1fr;
+    grid-template-columns: 1fr 540px;
     align-items: center;
-    grid-gap: 20px;
+    grid-gap: 40px;
   }
 
   &__video-wrapper {
@@ -61,14 +56,10 @@
 
   }
 
-  &__sub-title {
+  &__title {
     margin-bottom: 10px;
     font-style: italic;
-    @include font(Alegreya, 25px, 35px, 500);
-
-    span {
-      font-weight: 700;
-    }
+    @include font(Alegreya, 30px, 35px, 500);
   }
 
   &__text {
@@ -77,6 +68,7 @@
   }
 
   &__button {
+    margin-top: 40px;
     display: block;
     width: max-content;
   }
@@ -116,7 +108,7 @@
       grid-row: 2 / 3;
     }
 
-    &__sub-title {
+    &__title {
       @include fontAdaptive(20px, 25px);
     }
 
