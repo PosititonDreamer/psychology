@@ -1,0 +1,32 @@
+section.cost
+  .container.cost__container
+    h2.cost__title.title--h2 Стоимость услуг
+    p.cost__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci alias autem iste iure magnam necessitatibus officia quidem suscipit, ut!
+    p.cost__duration Стоимость сеанса указана за 1 час
+    .cost__list
+      .cost__item
+        picture.cost__image
+          source(srcset='./images/components/index-page/cost/image-1.png' media='(max-width: 1200px)')
+          img(src='./images/components/index-page/cost/image-1.png')
+        .cost__content
+          h3.cost__item-title Онлайн диагностика
+          p.cost__item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium asperiores commodi cumque debitis dicta eaque eos esse eum expedita, fugiat incidunt ipsa, magni modi mollitia necessitatibus non praesentium, quidem rem reprehenderit ullam unde veritatis!
+          p.cost__price
+            |3 500 ₽
+      .cost__item.cost__item--reverse
+        picture.cost__image
+          source(srcset='./images/components/index-page/cost/image-1.png' media='(max-width: 1200px)')
+          img(src='./images/components/index-page/cost/image-1.png')
+        .cost__content
+          h3.cost__item-title Индивидуальная онлайн консультация
+          p.cost__item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, corporis cumque cupiditate dolor ea earum ex facilis impedit ipsum iste iure magnam nisi officiis quae quasi, reprehenderit suscipit ullam vero voluptas voluptates! Ipsum, placeat, repellat?
+          p.cost__price 5 000 ₽
+      .cost__item
+        picture.cost__image
+          source(srcset='./images/components/index-page/cost/image-2.png' media='(max-width: 1200px)')
+          img(src='./images/components/index-page/cost/image-2.png')
+        .cost__content
+          h3.cost__item-title Парная онлайн консультация
+          p.cost__item-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium animi aperiam consectetur, consequatur delectus dicta fugiat harum illo laborum necessitatibus, nesciunt odio omnis pariatur porro quae quaerat rerum suscipit tenetur unde velit voluptas voluptatum.
+          p.cost__price 6 000 ₽
+    button.button.cost__button(data-popup-name='application') Записаться на сеанс
