@@ -17,7 +17,8 @@ body {
   flex-direction: column;
   font-family: Roboto, sans-serif;
   background-image: url("../images/background.png");
-  background-size: cover;
+  background-size: 100% auto;
+  background-repeat: repeat;
   background-position: top center;
 }
 
@@ -35,7 +36,7 @@ header, main, footer {
 
 .container {
   margin: 0 auto;
-  max-width: min(calc(100vw - 40px), 1440px);
+  max-width: min(calc(100vw - 40px), 1240px);
 }
 
 @import './_imports';

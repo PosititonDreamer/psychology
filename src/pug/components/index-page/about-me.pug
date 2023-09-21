@@ -1,0 +1,20 @@
+section.about-me
+  .container.about-me__container
+    .about-me__wrapper
+      .about-me__video-wrapper
+        .about-me__video
+          video(preload="none" controls=false loop muted playsinline poster='./images/components/index-page/about-me/poster.png')
+            source(src='./videos/components/index-page/about-me/video.mp4' type="video/mp4")
+          button.about-me__play-button
+            include ~@svg/components/index-page/about-me/play.svg
+        .about-me__video.about-me__video--mobile
+          video(preload="none" controls=false loop muted playsinline poster='./images/components/index-page/about-me/poster.png')
+            source(src='./videos/components/index-page/about-me/video.mp4' type="video/mp4")
+          button.about-me__play-button
+            include ~@svg/components/index-page/about-me/play.svg
+      .about-me__content
+        h2.about-me__title Расскажу немного о себе
+        p.about-me__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam aut est harum laudantium nihil repellendus saepe, totam ut voluptate. Expedita minus necessitatibus sint voluptatibus.
+        p.about-me__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam aut est harum laudantium nihil repellendus saepe, totam ut voluptate. Expedita minus necessitatibus sint voluptatibus.
+        a(href='biography.html').button.button--small.about-me__button Читать подробнее
+

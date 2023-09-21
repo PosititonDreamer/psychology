@@ -64,7 +64,7 @@
     width: 100%;
     @include font(Inter, 14px, 21px, 400);
 
-    &--not-empty, &--error, &:focus, &[type='date'] {
+    &--not-empty, &--error, &:focus, &[type='date'], &[type='time'] {
       border-color: var(--primary);
 
       ~ .input-wrapper__name {
