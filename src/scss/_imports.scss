@@ -21,4 +21,7 @@
 @import "./components/index-page/why-choose-me";
 @import "./components/index-page/cost";
 @import "./components/index-page/about-me";
+@import "./components/index-page/services";
 
+// Components mixins
+@import "./mixins/index-page/service";
