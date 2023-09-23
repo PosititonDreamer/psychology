@@ -14,6 +14,8 @@
 // Altgreya font
 @include font-face(Alegreya, '../fonts/Alegreya/Alegreya-Regular', 400, normal, ttf);
 @include font-face(Alegreya, '../fonts/Alegreya/Alegreya-Medium', 500, normal, ttf);
+@include font-face(Alegreya, '../fonts/Alegreya/Alegreya-SemiBold', 600, normal, ttf);
+@include font-face(Alegreya, '../fonts/Alegreya/Alegreya-Bold', 700, normal, ttf);
 
 // Inter font
 @include font-face(Inter, '../fonts/Inter/Inter-Light', 300, normal, ttf);
