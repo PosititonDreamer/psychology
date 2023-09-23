@@ -39,4 +39,11 @@ header, main, footer {
   max-width: min(calc(100vw - 40px), 1240px);
 }
 
+@include tablet {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 @import './_imports';
