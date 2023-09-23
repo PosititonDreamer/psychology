@@ -1,0 +1,13 @@
+section.blog-list
+  .container.blog-list__container
+    h2.title--h2.blog-list__title Все статьи
+    p.blog-list__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolorem earum maxime molestias nemo obcaecati officiis pariatur praesentium saepe voluptatibus.
+    -let j = 0
+    .blog-list__list
+      while j < 2
+        +blog-card('Грусть', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto consectetur cumque ex, explicabo fuga fugit iure laboriosam odio omnis pariatur possimus quos repellendus repudiandae, saepe sint sunt tenetur, vel.', './images/mixins/blog-page/blog-card/cry.png', './images/mixins/blog-page/blog-card/smile.png')
+        +blog-card('Гнев', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto consectetur cumque ex, explicabo fuga fugit iure laboriosam odio omnis pariatur possimus quos repellendus repudiandae, saepe sint sunt tenetur, vel.', null, null, './images/mixins/blog-page/blog-card/fire.gif')
+        +blog-card('Грусть', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto consectetur cumque ex, explicabo fuga fugit iure laboriosam odio omnis pariatur possimus quos repellendus repudiandae, saepe sint sunt tenetur, vel.', './images/mixins/blog-page/blog-card/cry.png', './images/mixins/blog-page/blog-card/smile.png')
+        +blog-card('Гнев', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto consectetur cumque ex, explicabo fuga fugit iure laboriosam odio omnis pariatur possimus quos repellendus repudiandae, saepe sint sunt tenetur, vel.', null, null, './images/mixins/blog-page/blog-card/fire.gif')
+        -j++
+    button.button.blog-list__button Показать еще статьи
