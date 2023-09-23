@@ -1,0 +1,15 @@
+mixin blog-card(title, text, imageBefore = null, imageAfter = null, gifImage = null)
+  a(href='#').blog-card
+    .blog-card__image-wrapper
+      if gifImage
+        .blog-card__image
+          img(src=gifImage)
+      else
+        .blog-card__image.blog-card__image--before
+          img(src=imageBefore)
+        .blog-card__image.blog-card__image--after
+          img(src=imageAfter)
+    .blog-card__content
+      h3.blog-card__title=title
+      p.blog-card__text=text
+      .button.button--small.blog-card__button Читать подробней
