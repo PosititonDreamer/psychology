@@ -76,6 +76,17 @@
       height: auto;
     }
   }
+
+  &__list {
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+
+    p {
+      text-indent: unset;
+    }
+  }
 }
 
 @include tablet {
@@ -114,6 +125,16 @@
     ul {
       li {
         padding-left: 20px;
+      }
+    }
+
+    &__list {
+      padding: 10px 0;
+      grid-template-columns: 100%;
+      grid-gap: 20px;
+
+      p {
+        text-indent: unset;
       }
     }
   }

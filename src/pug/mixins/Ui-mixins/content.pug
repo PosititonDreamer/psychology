@@ -1,8 +1,22 @@
-mixin content()
+mixin content(doubleBlock = null)
   .content
     h2 Заголовок 2
     h3 Заголовок 3
     h4 Заголовок 4
+    if doubleBlock
+      .content__list
+        div.content__item
+          h4 Первый блок
+          p текст первого блока
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate non nostrum nulla optio saepe voluptatibus!
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate non nostrum nulla optio saepe voluptatibus!
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate non nostrum nulla optio saepe voluptatibus!
+        div.content__item
+          h4 Второй блок
+          p текст первого блока
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate non nostrum nulla optio saepe voluptatibus!
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate non nostrum nulla optio saepe voluptatibus!
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate non nostrum nulla optio saepe voluptatibus!
     p пример текста который можно написать
     p Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur, autem cum earum eligendi error esse eum eveniet expedita facere fugiat id iste libero magni maxime modi mollitia, nemo obcaecati odio officia provident quae quam reprehenderit unde vel vitae voluptatem voluptatibus! Aperiam cum distinctio eum nobis quas. Ad adipisci assumenda beatae cumque delectus distinctio eligendi expedita ipsa itaque iure nobis pariatur quaerat, quas quasi rem, repellendus, velit voluptate voluptatum! Accusantium aliquam, amet assumenda consequuntur dignissimos dolore eaque eos et explicabo id illum ipsam ipsum minus natus omnis, quas quasi quidem quis, quo recusandae similique soluta tempore tenetur vel voluptas voluptate!
     a(href='#') пример ссылки
@@ -24,4 +38,3 @@ mixin content()
       li пример нумерованного списка 6
     picture.content__picture
       img(src='./images/components/index-page/banner/banner-image.jpg')
-    block
