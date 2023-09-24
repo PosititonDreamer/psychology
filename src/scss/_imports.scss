@@ -2,6 +2,7 @@
 @import "./components/Ui-components/title";
 @import "./components/Ui-components/link";
 @import "components/Ui-components/button";
+@import "components/Ui-components/second-page";
 
 // Ui-Mixins
 @import "./mixins/Ui-mixins/popup";
@@ -30,6 +31,3 @@
 // Components mixins
 @import "./mixins/index-page/service";
 @import "./mixins/blog-page/blog-card";
-
-// Pages
-@import "./pages/blog-detail";

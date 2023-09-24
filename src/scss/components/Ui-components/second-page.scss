@@ -1,4 +1,4 @@
-.blog-detail {
+.second-page {
   color: var(--primary);
 
   &__title {
@@ -15,7 +15,7 @@
 }
 
 @include tablet {
-  .blog-detail {
+  .second-page {
     padding-top: 90px;
 
     &__title {
