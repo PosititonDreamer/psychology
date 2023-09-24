@@ -1,0 +1,11 @@
+extends ~@templates/main-template
+
+block vars
+  - title = 'Blog detail'
+
+block content
+  section.blog-detail
+    .container
+      h1.blog-detail__title Название статьи
+      +content()
+        block CCnt

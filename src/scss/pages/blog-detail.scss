@@ -1,0 +1,15 @@
+.blog-detail {
+  color: var(--primary);
+
+  &__title {
+    max-width: 1000px;
+    margin: 0 auto 10px;
+    text-align: center;
+    @include font(Alegreya, 50px, 1.25, 600);
+  }
+
+  .content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,78 @@
+.content {
+
+  * {
+    color: var(--primary);
+  }
+
+  p, a, li {
+    @include font(Inter, 20px, 1.4, 400);
+  }
+  p {
+    text-indent: 30px;
+  }
+
+  a {
+    text-decoration: underline;
+    transition: opacity .3s ease-in-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  h2, h3, h4 {
+    font-style: italic;
+    font-family: Alegreya, sans-serif;
+    font-weight: 700;
+  }
+
+  h2 {
+    @include fontAdaptive(42px, 1.25)
+  }
+
+  h3 {
+    @include fontAdaptive(35px, 1.25)
+  }
+
+  h4 {
+    @include fontAdaptive(27px, 1.25)
+  }
+
+  ol {
+    padding-left: 30px;
+  }
+
+  ul {
+    li {
+      padding-left: 30px;
+      position: relative;
+      &::before {
+        content: '';
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: var(--primary);
+        position: absolute;
+        top: 10px;
+        left: 16px;
+      }
+    }
+  }
+
+  &__picture {
+    max-width: 100%;
+    display: flex;
+
+    &--center {
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      width: auto;
+      height: auto;
+    }
+  }
+}

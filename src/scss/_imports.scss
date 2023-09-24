@@ -9,6 +9,7 @@
 @import "./mixins/Ui-mixins/accordion";
 @import "./mixins/Ui-mixins/input";
 @import "./mixins/Ui-mixins/select";
+@import "./mixins/Ui-mixins/content";
 
 // Components
 @import "./components/header";
@@ -29,3 +30,6 @@
 // Components mixins
 @import "./mixins/index-page/service";
 @import "./mixins/blog-page/blog-card";
+
+// Pages
+@import "./pages/blog-detail";
