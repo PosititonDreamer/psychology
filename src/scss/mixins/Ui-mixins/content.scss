@@ -87,6 +87,15 @@
       text-indent: unset;
     }
   }
+
+  &__button {
+    margin: 10px 0;
+    display: block;
+
+    &--center {
+      margin-inline: auto;
+    }
+  }
 }
 
 @include tablet {
