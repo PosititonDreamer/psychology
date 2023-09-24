@@ -1,0 +1,10 @@
+extends ~@templates/main-template
+
+block vars
+  - title = 'Biography'
+
+block content
+  section.blog-detail
+    .container
+      h1.blog-detail__title Биография
+      +content(true)
