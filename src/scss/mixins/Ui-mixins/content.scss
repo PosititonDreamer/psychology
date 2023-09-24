@@ -1,5 +1,4 @@
 .content {
-
   * {
     color: var(--primary);
   }
@@ -7,6 +6,7 @@
   p, a, li {
     @include font(Inter, 20px, 1.4, 400);
   }
+
   p {
     text-indent: 30px;
   }
@@ -46,6 +46,7 @@
     li {
       padding-left: 30px;
       position: relative;
+
       &::before {
         content: '';
         width: 4px;
@@ -73,6 +74,47 @@
       max-width: 100%;
       width: auto;
       height: auto;
+    }
+  }
+}
+
+@include tablet {
+  .content {
+    p, a, li {
+      font-size: 16px;
+    }
+
+    p {
+      text-indent: 20px;
+    }
+
+    a {
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    h2 {
+      font-size: 38px;
+    }
+
+    h3 {
+      font-size: 31px;
+    }
+
+    h4 {
+      font-size: 23px;
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+
+    ul {
+      li {
+        padding-left: 20px;
+      }
     }
   }
 }
