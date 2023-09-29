@@ -13,6 +13,7 @@
 @import "./mixins/Ui-mixins/content";
 @import "./mixins/Ui-mixins/beaf-card";
 @import "./mixins/banner";
+@import "./mixins/review-card";
 
 // Components
 @import "./components/header";
@@ -27,6 +28,7 @@
 @import "./components/index-page/about-me";
 @import "./components/index-page/services";
 @import "./components/index-page/last-blog";
+@import "./components/index-page/reviews";
 @import "./components/blog-page/blog-list";
 
 // Components mixins

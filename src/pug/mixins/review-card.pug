@@ -1,0 +1,16 @@
+mixin review-card(name,service, text, rate)
+    .review-card
+        .review-card__head
+            p.review-card__name=name
+              span.reviews-card__service=service
+            .review-card__rate
+                - let r = 0
+                while r < 5
+                    if rate > 0
+                        include ~@svg/mixins/review-card/star.svg
+                    else
+                        include ~@svg/mixins/review-card/star-empty.svg
+                    - r++
+                    - rate--
+        .review-card__text
+            p=text

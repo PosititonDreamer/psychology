@@ -13,5 +13,6 @@
   --z-top: 80;
   --z-over-top: 100;
   --banner-bg: #FFFCE5;
-
+  --banner-bg-0: rgba(255, 252, 229, 0);
+  --gradient-for-review-card: linear-gradient(360deg, var(--banner-bg) 0%, var(--banner-bg-0) 100%);
 }

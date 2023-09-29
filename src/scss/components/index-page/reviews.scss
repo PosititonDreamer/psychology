@@ -1,0 +1,43 @@
+.reviews {
+  padding-top: 60px;
+  color: var(--primary);
+
+  &__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__sub-list {
+    .review-card {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@include tablet{
+  .reviews {
+    padding-top: 40px;
+  }
+}
+
+@include phone {
+  .reviews {
+    &__list {
+      grid-template-columns: 100%;
+    }
+  }
+}

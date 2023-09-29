@@ -1,0 +1,127 @@
+.review-card {
+  padding: 20px 15px;
+  background: var(--banner-bg);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary);
+    @include font(Inter, 16px, 24px, 600);
+
+    span {
+      margin-left: 9px;
+      color: var(--primary-75);
+      font-weight: 400;
+    }
+  }
+
+  &__rate {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 7px;
+  }
+
+  &__text {
+    max-height: 176px;
+    overflow: hidden auto;
+    color: var(--primary-75);
+    @include font(Inter, 16px, 23px, 400);
+
+    &--scroll {
+      padding-bottom: 45px;
+      padding-right: 23px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 45px;
+        width: calc(100% - 43px);
+        background: var(--gradient-for-review-card);
+        z-index: 2;
+        pointer-events: none;
+      }
+    }
+
+    .simplebar-track {
+      background: var(--primary-25);
+      border-radius: 16px;
+      opacity: 1;
+
+      .simplebar-scrollbar {
+        border-radius: 16px;
+
+        &::before {
+          opacity: 1 !important;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: var(--primary);
+          border-radius: 16px;
+        }
+      }
+
+      &.simplebar-vertical {
+        height: 100%;
+        width: 6px !important;
+      }
+    }
+    .simplebar-placeholder {
+      width: 100% !important;
+    }
+  }
+}
+
+@include tablet {
+  .review-card {
+    padding: 25px 20px 21px;
+
+    &__head {
+      margin-bottom: 15px;
+    }
+
+    &__name {
+      @include fontAdaptive(14px, 21px);
+    }
+
+    &__text {
+      @include fontAdaptive(14px, 20px);
+
+      &--scroll {
+        padding-right: 26px;
+
+        &::before {
+          width: calc(100% - 26px);
+        }
+      }
+    }
+  }
+}
+
+@include phone {
+  .review-card {
+    &__text {
+      max-height: 152px;
+      @include fontAdaptive(12px, 17px);
+
+      &--scroll {
+        padding-right: 21px;
+
+        &::before {
+          width: calc(100% - 21px);
+        }
+      }
+    }
+  }
+}
