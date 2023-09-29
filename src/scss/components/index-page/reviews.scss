@@ -26,6 +26,11 @@
     margin: 0 auto;
     display: block;
   }
+
+  &__send-review {
+    width: max-content;
+    margin: 0 auto 20px;
+  }
 }
 
 @include tablet{

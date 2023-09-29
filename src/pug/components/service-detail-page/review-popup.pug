@@ -1,0 +1,20 @@
++popup('Оставить отзыв', 'review', 'review-popup')
+  block RPContent
+    .review-popup__final
+      p.review-popup__thank Спасибо!
+      p.review-popup__final-text Ваш отзыв успешно отправлен!
+      include ~@svg/components/service-detail-page/review-popup/accept.svg
+    form.review-popup__form
+      +input('text', 'Имя', true, null, 'review-popup__input', 'name')
+      .review-popup
+        p.review-popup__text Рейтинг*
+        .review-popup__rate-list
+          -let j = 5
+          while j > 0
+              label.review-popup__rate
+                  input(type='radio', name='rate', value=j)
+                  include ~@svg/components/service-detail-page/review-popup/star.svg
+              -j--
+        p.review-popup__rate-error Обязательно нужно выбрать оценку
+      +input('text', 'Отзыв', true, null, 'review-popup__input', 'description', 'textarea')
+      button.button.button--small.review-popup__button(type='submit') Отправить заявку
