@@ -4,10 +4,10 @@ block vars
   - title = 'services'
 
 block content
-  include ~@components/services-page/services-banner
+  +ui-banner('Услуги', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet laboriosam laborum maxime minima mollitia nobis nostrum officiis qui sapiente tenetur. Adipisci aspernatur consectetur cum hic officiis soluta vel veniam vitae.')
   section.services-page
     .container.service-page__container
-      h2.title--h2.services-page__title Все услуги
+      h2.title--h2.services-page__title Список услуг
       p.services-page__sub-title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam autem debitis eaque expedita illo inventore molestias nemo quaerat quo veniam?
       .services-page__list
         -let j = 0

@@ -1,4 +1,4 @@
-.blog-banner {
+.ui-banner {
   padding: 130px 0 60px;
   height: var(--window-height, 100vh);
   position: relative;
@@ -40,10 +40,6 @@
     }
   }
 
-  &__content {
-    max-width: 700px;
-  }
-
   &__title {
     margin-bottom: 20px;
     font-style: italic;
@@ -51,12 +47,13 @@
   }
 
   &__text {
+    max-width: 700px;
     @include font(Inter, 25px, 30px, 300);
   }
 }
 
 @include tablet {
-  .blog-banner {
+  .ui-banner {
     padding: 70px 0;
     margin-top: unset;
 
@@ -71,7 +68,7 @@
 }
 
 @include phone {
-  .blog-banner {
+  .ui-banner {
     &__title {
       @include fontAdaptive(30px, 1.5);
     }
