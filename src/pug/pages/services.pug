@@ -4,9 +4,10 @@ block vars
   - title = 'services'
 
 block content
-  secction.services-page
+  include ~@components/services-page/services-banner
+  section.services-page
     .container.service-page__container
-      h1.title--h2.services-page__title Услуги
+      h2.title--h2.services-page__title Все услуги
       p.services-page__sub-title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam autem debitis eaque expedita illo inventore molestias nemo quaerat quo veniam?
       .services-page__list
         -let j = 0
