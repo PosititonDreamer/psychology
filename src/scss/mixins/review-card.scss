@@ -111,6 +111,24 @@
 
 @include phone {
   .review-card {
+
+    &__head {
+      align-items: unset;
+    }
+
+    &__name {
+      flex-direction: column;
+      align-items: flex-start;
+
+      span {
+        margin-left: 0;
+      }
+    }
+
+    &__rate {
+      margin-top: 4px;
+    }
+
     &__text {
       max-height: 152px;
       @include fontAdaptive(12px, 17px);
