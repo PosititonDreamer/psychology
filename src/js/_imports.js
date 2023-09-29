@@ -2,6 +2,7 @@
 import './mixins/Ui-mixins/popup'
 import './mixins/Ui-mixins/accordion'
 import './mixins/Ui-mixins/select'
+import './mixins/Ui-mixins/beaf-card'
 
 // Components
 import './components/submit-application'

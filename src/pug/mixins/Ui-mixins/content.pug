@@ -1,4 +1,4 @@
-mixin content(doubleBlock = null)
+mixin content(doubleBlock = null, beaf = null)
   .content
     h2 Заголовок 2
     h3 Заголовок 3
@@ -26,6 +26,9 @@ mixin content(doubleBlock = null)
     button.button.button--small.content__button.content__button--center(data-popup-name='application') Записаться на прием
     picture.content__picture.content__picture--center
       img(src='./images/components/index-page/banner/banner-image.jpg')
+    if beaf
+      +beaf-card('./images/mixins/blog-page/blog-card/cry.png', './images/mixins/blog-page/blog-card/smile.png')
+      +beaf-card('./images/mixins/blog-page/blog-card/cry.png', './images/mixins/blog-page/blog-card/smile.png', true)
     ul
       li пример маркированного списка 1
       li пример маркированного списка 2

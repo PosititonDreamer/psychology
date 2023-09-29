@@ -1,0 +1,8 @@
+mixin beaf-card(imageBefore, imageAfter, center = null)
+  .beaf-card(class = center && 'beaf-card--center')
+    .beaf-card__image.beaf-card__image--before
+      img(src=imageBefore)
+    .beaf-card__image.beaf-card__image--after
+      img(src=imageAfter)
+    .beaf-card__line
+      include ~@svg/mixins/Ui-mixins/beaf-card/beaf-arrow.svg

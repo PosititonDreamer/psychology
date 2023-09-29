@@ -1,0 +1,67 @@
+.beaf-card {
+  position: relative;
+  z-index: var(--z-center);
+  width: 100%;
+  max-width: 450px;
+  margin: 10px 0;
+
+  &--center {
+    margin: 10px auto;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    user-select: none;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+    }
+
+    &--before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: var(--width);
+      height: 100%;
+      z-index: var(--z-top);
+      overflow: hidden;
+
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  &__line {
+    position: absolute;
+    z-index: var(--z-top);
+    left: var(--left-line);
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: col-resize;
+
+    &::before {
+      content: '';
+      height: 100%;
+      width: 2px;
+      background: var(--primary);
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+    }
+
+    svg {
+      position: relative;
+      z-index: var(--z-top);
+    }
+  }
+}
