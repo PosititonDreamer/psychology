@@ -1,5 +1,4 @@
 .why-choose-me {
-
   &__inner {
     display: grid;
     grid-template-columns: 45% 55%;
@@ -71,6 +70,11 @@
 
   &__description {
     @include font(Inter, 20px, 30px, 300);
+  }
+
+  &__button {
+    margin-top: 20px;
+    width: max-content;
   }
 }
 
