@@ -1,149 +1,34 @@
 .services {
   padding-bottom: 60px;
-
-  &__inner {
-    color: var(--primary);
-  }
-
-  &__main-text {
-    text-align: center;
-  }
+  color: var(--primary);
+  text-align: center;
 
   &__title {
+    margin-bottom: 20px;
     @include font(Inter, 34px, 40px, 700);
   }
 
-  &__subtitle {
-    margin: 20px 0;
+  &__sub-title {
+    margin-bottom: 10px;
     @include font(Inter, 20px, 30px, 400);
   }
 
-  &__slider {
-
-  }
-
-  &__slider-wrapper {
+  &__list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-column-gap: 20px;
-  }
-
-  &__arrows {
-    display: flex;
-    justify-content: center;
-    margin: 40px -10px 0 -10px;
-  }
-
-  &__arrow {
-    cursor: pointer;
-    margin: 0 10px;
-  }
-
-  &__arrow--prev {
-    border: 1px solid var(--primary);
-    padding: 20px;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 20px;
-      height: 20px;
-      border-top: 2px solid var(--primary);
-      border-left: 2px solid var(--primary);
-      transform: rotate(-45deg);
-    }
-
-  }
-
-  &__arrow--next {
-    border: 1px solid var(--primary);
-    padding: 20px;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 20px;
-      height: 20px;
-      border-top: 2px solid var(--primary);
-      border-right: 2px solid var(--primary);
-      transform: rotate(45deg);
-    }
+    margin-bottom: 20px;
   }
 }
 
-//MEDIA
-@media (max-width: 1049px) {
+@include tablet {
   .services {
-    &__slider-wrapper {
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 20px;
-
-      :nth-last-child(3) {
-        display: none;
-      }
-    }
-  }
-}
-
-@media (max-width: 800px) {
-  .services {
-    &__slider-wrapper {
-      grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 15px;
-
-      :nth-last-child(4) {
-        display: none;
-      }
-    }
-
-    &__arrow--prev {
-      padding: 15px;
-
-      &::after {
-        width: 15px;
-        height: 15px;
-      }
-
-    }
-
-    &__arrow--next {
-      padding: 15px;
-
-      &::after {
-        width: 15px;
-        height: 15px;
-      }
-    }
-
     &__title {
       @include fontAdaptive(20px, 30px);
     }
 
-    &__subtitle {
-      margin: 20px 0;
+    &__sub-title {
       @include fontAdaptive(15px, 25px);
-    }
-  }
-  .service {
-    &__title {
-      @include fontAdaptive(20px, 30px);
-    }
-
-    &__description {
-      @include fontAdaptive(15px, 25px);
-    }
-  }
-}
-
-@media (max-width: 622px) {
-  .services {
-    &__slider-wrapper {
-      grid-template-columns: 1fr;
-      grid-column-gap: 0;
-
-      :nth-child(4) {
-        display: none;
-      }
     }
   }
 }

@@ -1,17 +1,11 @@
 section.services
-  .container
-    .services__inner
-      .services__main-text
-        p.services__title Предоставляемые услуги
-        p.services__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi illum magnam officiis repellat?
-      .services__slider
-        .services__slider-wrapper
-          +service('../../../images/components/index-page/services/slider-image.png', 'Лечение депрессии', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ullam!')
-          +service('../../../images/components/index-page/services/slider-image.png', 'Лечение депрессии', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ullam!')
-          +service('../../../images/components/index-page/services/slider-image.png', 'Лечение депрессии', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ullam!')
-          +service('../../../images/components/index-page/services/slider-image.png', 'Лечение депрессии', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ullam!')
-      .services__arrows
-        .services__arrow
-          .services__arrow--prev
-        .services__arrow
-          .services__arrow--next
+  .container.services__container
+      p.services__title Предоставляемые услуги
+      p.services__sub-title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi illum magnam officiis repellat?
+      a(href='services.html').last-blog__link.services__link Посмотреть все услуги
+      .services__list
+        +service-card('../../../images/components/index-page/services/slider-image.png', 'Лечение депрессии', 'Lorem ipsum dolor sit amet,asdas dasd asd asd asd  sdasdas  asd asd asda sdas dasd asd asd asd asdas dfasd asd asd asd asd s consectetur adipisicing elit. Praesentium, ullam!')
+        +service-card('../../../images/components/index-page/services/slider-image.png', 'Лечение депрессии', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ullam!')
+        +service-card('../../../images/components/index-page/services/slider-image.png', 'Лечение депрессии', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ullam!')
+        +service-card('../../../images/components/index-page/services/slider-image.png', 'Лечение депрессии', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ullam!')
+      button.button.services__button(data-popup-name='application') Записаться на прием

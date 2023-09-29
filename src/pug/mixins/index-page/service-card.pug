@@ -1,0 +1,8 @@
+mixin service-card(img,title,description)
+  .service-card
+    .service-card__image
+      img(src=img)
+    .service-card__inner
+      p.service-card__title=title
+      p.service-card__description=description
+      a(href='service-detail.html').button.button--small.service-card__link Читать подробней
