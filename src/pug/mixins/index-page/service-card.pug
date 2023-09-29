@@ -1,7 +1,12 @@
-mixin service-card(img,title,description)
+mixin service-card(img,title,description, number)
   .service-card
     .service-card__image
-      img(src=img)
+      if number === 1
+        include ~@svg/mixins/index-page/service-card/icon-1.svg
+      else if number === 2
+        include ~@svg/mixins/index-page/service-card/icon-2.svg
+      else
+        include ~@svg/mixins/index-page/service-card/icon-3.svg
     .service-card__inner
       p.service-card__title=title
       p.service-card__description=description

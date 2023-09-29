@@ -2,18 +2,23 @@
   display: grid;
   grid-template-rows: auto 1fr;
   text-align: left;
+  background: var(--banner-bg);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 
   &__image {
-    img {
-      display: block;
-      width: 100%;
+    padding: 25px 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      max-height: 80px;
+      width: auto;
     }
   }
 
   &__inner {
     padding: 15px 15px;
-    background: var(--banner-bg);
     display: flex;
     flex-direction: column;
   }

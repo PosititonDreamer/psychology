@@ -1,0 +1,15 @@
+extends ~@templates/main-template
+
+block vars
+  - title = 'services'
+
+block content
+  secction.services-page
+    .container.service-page__container
+      h1.title--h2.services-page__title Услуги
+      p.services-page__sub-title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam autem debitis eaque expedita illo inventore molestias nemo quaerat quo veniam?
+      .services-page__list
+        -let j = 0
+        while j < 7
+          +service-card('../../../images/components/index-page/services/slider-image.png', 'Лечение депрессии', 'Lorem ipsum dolor sit amet,asdas dasd asd asd asd  sdasdas  asd asd asda sdas dasd asd asd asd asdas dfasd asd asd asd asd s consectetur adipisicing elit. Praesentium, ullam!', j % 3)
+          -j++

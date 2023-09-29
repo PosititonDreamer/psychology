@@ -1,0 +1,24 @@
+.services-page {
+  color: var(--primary);
+  text-align: center;
+
+  &__title, &__sub-title {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__sub-title {
+    margin-bottom: 20px;
+    @include font(Inter, 20px, 30px, 400);
+  }
+
+  &__list {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
