@@ -17,4 +17,8 @@
               -j--
         p.review-popup__rate-error Обязательно нужно выбрать оценку
       +input('text', 'Отзыв', true, null, 'review-popup__input', 'description', 'textarea')
-      button.button.button--small.review-popup__button(type='submit') Отправить заявку
+      // политика отзывов
+      p.review-popup__policy *Нажимая на "отправить заявку" вы соглашаетесь с
+        a(href='#') политикой конфидиальности данных
+      // политика отзывов
+      buttohn.button.button--small.review-popup__button(type='submit') Отправить заявку

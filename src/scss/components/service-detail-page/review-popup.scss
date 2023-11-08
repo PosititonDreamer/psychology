@@ -10,9 +10,27 @@
     margin: 6px 0 18px;
   }
 
+  &__policy {
+    margin: auto 0 10px;
+    color: var(--primary);
+    @include font(Alegreya, 12px, 14px, 500);
+
+    a {
+      font-style: italic;
+      font-weight: 700;
+      color: var(--primary);
+      margin-left: 3px;
+      transition: color .3s ease-in-out;
+
+      &:hover {
+        color: var(--primary-75);
+      }
+    }
+  }
+
   &__button {
     width: 100%;
-    margin-top: auto;
+    text-align: center;
   }
 
   &__text {

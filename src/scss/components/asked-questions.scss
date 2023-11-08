@@ -1,5 +1,5 @@
 .asked-questions {
-  padding: 60px 0;
+  padding: 0 0 60px;
 
   &__title {
     color: var(--primary);
@@ -24,7 +24,7 @@
 }
 @include phone {
   .asked-questions {
-    padding: 40px 0;
+    padding: 0 0 40px;
 
     &__title {
       @include fontAdaptive(20px, 36px);

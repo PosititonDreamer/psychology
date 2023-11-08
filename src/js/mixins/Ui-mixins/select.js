@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const selectActiveSpan = selectActive.querySelector('span ')
       const selectList = select.querySelector('.select__list')
       const selectItems = select.querySelectorAll('.select__item')
-      const selectInput = select.querySelectorAll('.select__input')
+      const selectInput = select.querySelector('.select__input')
       select.style.zIndex = `${selects.length - index + 1}`
       select.classList.add('select--created')
       selectActive.addEventListener('click', (e) => {
@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const text = item.innerText
           selectActiveSpan.innerHTML = text
           selectInput.value = text
+          selectInput.setAttribute('value', text)
           selectItems[activeIndex].classList.remove('select__item--active')
           activeIndex = index
           selectItems[index].classList.add('select__item--active')
