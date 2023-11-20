@@ -3,6 +3,8 @@
   background: var(--banner-bg);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   color: var(--primary);
+  display: grid;
+  grid-template-rows: auto 1fr;
 
   &:hover {
     .blog-card {
@@ -43,6 +45,8 @@
   }
 
   &__content {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
   }
 
@@ -58,6 +62,7 @@
   }
 
   &__button {
+    margin-top: auto;
     display: block;
     width: max-content;
   }

@@ -1,7 +1,6 @@
 .banner {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  margin-bottom: 120px;
 
   &__container {
     max-width: min(calc(100vw - 40px), 1290px);
@@ -197,6 +196,7 @@
 
     &__image {
       width: unset;
+
       img {
         width: 100%;
         max-height: 398px;
@@ -224,7 +224,7 @@
 
     &__image {
       margin: 0;
-      width: 55%;
+      width: 75%;
     }
   }
 }
@@ -253,7 +253,7 @@
     }
 
     &__image {
-      width: 77%;
+      width: 100%;
     }
   }
 }

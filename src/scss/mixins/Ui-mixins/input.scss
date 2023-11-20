@@ -75,7 +75,7 @@
       }
     }
 
-    &[type='date'] {
+    &[type='date'], &[type='time'] {
       min-width: 95%;
       height: 42px;
     }

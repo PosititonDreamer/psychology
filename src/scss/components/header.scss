@@ -11,13 +11,10 @@
     display: flex;
     align-items: center;
     color: var(--primary);
+    transition: color .3s ease-in-out;
 
-    &:not(span) {
-      transition: color .3s ease-in-out;
-
-      &:hover {
-        color: var(--primary-50);
-      }
+    &:hover {
+      color: var(--primary-50);
     }
   }
 
@@ -84,9 +81,7 @@
     padding: 10px 0;
 
     &__logo {
-      &:not(span):hover {
-        color: var(--primary);
-      }
+      color: var(--primary);
 
       svg {
         width: 50px;
